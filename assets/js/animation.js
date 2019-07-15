@@ -58,5 +58,4 @@ var colors = new Array(
   }
   
   setInterval(updateGradient,10);
-
-    $('canvas').fadeOut();
+  $('canvas').fadeOut();
