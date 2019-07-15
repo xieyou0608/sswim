@@ -29,7 +29,8 @@ function s(e){
         dept = "社會工作學系"
 
     let all = {}
-    all[name]={
+    all[ident]={
+        name:name,
         email:email,
         phone:phone,
         ident:ident,
