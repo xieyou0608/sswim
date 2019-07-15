@@ -2028,8 +2028,35 @@
 			}
 
 				form .field.half.first {
-					margin-right: 2.5%;
+					margin-right: 2f%;
 				}
+			
+			form .field.third {
+				display: inline-block;
+				width: 31%
+			}
+
+			form .field.third.first {
+				margin-right: 2%
+			}
+
+			form .year {
+				display: inline-block;
+				width: 48%;
+				margin-right: 1%
+			}
+
+			form .month{
+				display: inline-block;
+				width: 23%;
+				margin-right: 1%;
+			}
+
+			form .day{
+				display: inline-block;
+				width: 23%;
+			}
+
 
 		@media screen and (max-width: 980px) {
 
@@ -2054,6 +2081,7 @@
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="tel"],
 	select,
 	textarea {
 		-moz-appearance: none;
@@ -2074,6 +2102,7 @@
 		input[type="text"]:invalid,
 		input[type="password"]:invalid,
 		input[type="email"]:invalid,
+		input[type="tel"]:invalid,
 		select:invalid,
 		textarea:invalid {
 			box-shadow: none;
@@ -2114,6 +2143,7 @@
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="tel"],
 	select {
 		height: 2.75rem;
 	}
@@ -2213,6 +2243,7 @@
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="tel"]
 	select,
 	textarea {
 		background: rgba(144, 144, 144, 0.075);
@@ -2222,6 +2253,7 @@
 		input[type="text"]:focus,
 		input[type="password"]:focus,
 		input[type="email"]:focus,
+		input[type="tel"]:focus,
 		select:focus,
 		textarea:focus {
 			border-color: #5AA6ED;
@@ -2773,6 +2805,7 @@
 			.wrapper.style1 input[type="text"],
 			.wrapper.style1 input[type="password"],
 			.wrapper.style1 input[type="email"],
+			.wrapper.style1 input[type="tel"],
 			.wrapper.style1 select,
 			.wrapper.style1 textarea {
 				background: rgba(255, 255, 255, 0.075);
@@ -2782,6 +2815,7 @@
 				.wrapper.style1 input[type="text"]:focus,
 				.wrapper.style1 input[type="password"]:focus,
 				.wrapper.style1 input[type="email"]:focus,
+				.wrapper.style1 input[type="tel"]:focus,
 				.wrapper.style1 select:focus,
 				.wrapper.style1 textarea:focus {
 					border-color: #ffffff;
@@ -2981,6 +3015,7 @@
 			.wrapper.style2 input[type="text"],
 			.wrapper.style2 input[type="password"],
 			.wrapper.style2 input[type="email"],
+			.wrapper.style2 input[type="tel"],
 			.wrapper.style2 select,
 			.wrapper.style2 textarea {
 				background: rgba(0, 0, 0, 0.075);
@@ -2990,6 +3025,7 @@
 				.wrapper.style2 input[type="text"]:focus,
 				.wrapper.style2 input[type="password"]:focus,
 				.wrapper.style2 input[type="email"]:focus,
+				.wrapper.style2 input[type="tel"]:focus,
 				.wrapper.style2 select:focus,
 				.wrapper.style2 textarea:focus {
 					border-color: #5AA6ED;
@@ -3016,6 +3052,10 @@
 				background-color: #5AA6ED;
 				border-color: #5AA6ED;
 				color: #ffffff;
+			}
+			.wrapper.style2 input[type="checkbox"]:checked + label,
+			.wrapper.style2 input[type="radio"]:checked + label{
+				color: #000;
 			}
 
 			.wrapper.style2 input[type="checkbox"]:focus + label:before,
@@ -3209,6 +3249,7 @@
 			.wrapper.style3 input[type="text"],
 			.wrapper.style3 input[type="password"],
 			.wrapper.style3 input[type="email"],
+			.wrapper.style3 input[type="tel"],
 			.wrapper.style3 select,
 			.wrapper.style3 textarea {
 				background: rgba(255, 255, 255, 0.075);
@@ -3218,6 +3259,7 @@
 				.wrapper.style3 input[type="text"]:focus,
 				.wrapper.style3 input[type="password"]:focus,
 				.wrapper.style3 input[type="email"]:focus,
+				.wrapper.style3 input[type="tel"]:focus,
 				.wrapper.style3 select:focus,
 				.wrapper.style3 textarea:focus {
 					border-color: #5AA6ED;
