@@ -198,25 +198,25 @@
 										<label for="contact_number">緊急聯絡人電話</label>
 										<input name="contact_number" id="contact_number" type="tel" placeholder="緊急聯絡人電話" required="required">
 									</div>
-									<div class="field">
+									<div class="field" id ="dept">
 										<label for="dept">系所</label>
-											<input type="radio" id="IM" value="IM" name="dept" required="required">
-											<label for="IM">資訊管理學系</label>
-											<input type="radio" id="Soc" value="Soc" name="dept" required="required">
-											<label for="Soc">社會學系</label>
-											<input type="radio" id="SW" value="SW" name="dept" required="required">
-											<label for="SW">社會工作學系</label>
+										<input type="radio" id="IM" value="IM" name="dept" required="required">
+										<label for="IM">資訊管理學系</label>
+										<input type="radio" id="Soc" value="Soc" name="dept" required="required">
+										<label for="Soc">社會學系</label>
+										<input type="radio" id="SW" value="SW" name="dept" required="required">
+										<label for="SW">社會工作學系</label>
 									</div>
 									<div class="field third">
 										<label for="birthday">生日</label>
 										<div class="year">
-											<input name="birthday_year" id="birthday" type="text" placeholder="西元年" maxlength="4" required="required">
+											<input name="birthday_year" id="year" type="text" placeholder="西元年" maxlength="4" required="required">
 										</div>
 										<div class="month">
-											<input name="birthday_month" id="birthday" type="text" placeholder="月" maxlength="2" required="required">
+											<input name="birthday_month" id="month" type="text" placeholder="月" maxlength="2" required="required">
 										</div>
 										<div class="day">
-											<input name="birthday_day" id="birthday" type="text" placeholder="日" maxlength="2" required="required">
+											<input name="birthday_day" id="day" type="text" placeholder="日" maxlength="2" required="required">
 										</div>
 
 									</div><br>
@@ -246,7 +246,7 @@
 										<textarea name="message" id="message" rows="3" placeholder="想說的話"></textarea>
 									</div>
 									<ul class="actions align-center">
-										<li><input value="馬上報名" class="button special" type="submit"></li>
+										<li><input value="馬上報名" class="button special" type="submit" onclick="s(event)"></li>
 									</ul>
 								</form>
 							</div>
@@ -263,6 +263,15 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/animation.js"></script>
+
+			<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
+			<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+
+			<!-- TODO: Add SDKs for Firebase products that you want to use
+				https://firebase.google.com/docs/web/setup#config-web-app -->
+
+			<script src="assets/js/database.js"></script>
+			<script src="assets/js/onClicks.js"></script>
 
 
 	</body>
