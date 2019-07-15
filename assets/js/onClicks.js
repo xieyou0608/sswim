@@ -1,5 +1,5 @@
 function s(e){
-    e.preventDefault();
+    //e.preventDefault();
     let name = document.getElementById("name").value
     let email = document.getElementById("email").value
     let phone = document.getElementById("phone").value
@@ -44,6 +44,5 @@ function s(e){
         isVeg:isVeg,
         otherMessage: otherMessage
     }
-    console.log(all)
     sendData(all)
 }
