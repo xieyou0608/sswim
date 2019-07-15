@@ -1,5 +1,5 @@
 function s(e){
-    //e.preventDefault();
+//    e.preventDefault();
     let name = document.getElementById("name").value
     let email = document.getElementById("email").value
     let phone = document.getElementById("phone").value
@@ -44,5 +44,9 @@ function s(e){
         isVeg:isVeg,
         otherMessage: otherMessage
     }
+    var button = document.getElementById("submission")
+    button.value = "報名成功"
+    button.style.backgroundColor = "#2dcf1b"
+    button.disabled = "disabled"
     sendData(all)
 }

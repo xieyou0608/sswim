@@ -1916,6 +1916,10 @@
 			opacity: 0.25;
 		}
 
+		input[type="submit"].submission:disabled {
+			opacity: 1;
+		}
+
 		@media screen and (max-width: 480px) {
 
 			input[type="submit"],
