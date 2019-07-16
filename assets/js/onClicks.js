@@ -44,5 +44,8 @@ function s(e){
         isVeg:isVeg,
         otherMessage: otherMessage
     }
-    sendData(all)
+    if(name && email && phone && ident && contact_number && contact_person && dept != "none" && year && month && day
+        && size){
+        sendData(all)
+        }
 }
