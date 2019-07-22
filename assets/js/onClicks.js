@@ -49,3 +49,6 @@ function s(e){
         sendData(all)
         }
 }
+function knowledgeStart(e){
+    console.log(1)
+}

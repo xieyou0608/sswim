@@ -2068,6 +2068,9 @@
 				form .field.half.first {
 					margin-right: 0;
 				}
+			form .field.third{
+				width: 100%;
+			}
 
 		}
 
@@ -2682,7 +2685,7 @@
 /* Wrapper */
 
 	.wrapper {
-		padding: 6rem 0 4rem 0 ;
+		padding: 5rem 0 4rem 0 ;
 		position: relative;
 		margin: 0;
 	}
@@ -4280,4 +4283,9 @@ canvas{
 }
 header h2{
 	font-size: 3.0rem;
+}
+.innerbutton{
+}
+.center{
+	justify-content: center;
 }
