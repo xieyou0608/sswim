@@ -10,7 +10,11 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 var database = firebase.database().ref().child("form")
+var gamebase = firebase.database().ref().child("game")
 
 function sendData(data){
     database.update(data)
+}
+function endGameSendData(data){
+    gamebase.update(data)
 }
