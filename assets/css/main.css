@@ -3915,7 +3915,7 @@
 /* Footer */
 
 	#footer {
-		padding: 6rem 0 4rem 0 ;
+		padding: 6rem 0 0.1rem 0 ;
 		background: #f2f2f2;
 	}
 
@@ -4283,4 +4283,30 @@ canvas{
 }
 header h2{
 	font-size: 3.0rem;
+}
+.real-footer{
+	
+}
+.wrapper.style2 .footer-h3{
+	text-align: left;
+	color: #444444db;
+	margin-bottom: 0.5rem;
+	font-weight: 400;
+	font-size:  0.9rem;
+}
+.simple-table{
+	
+}
+.simple-table td{
+	font-size: 0.7rem;
+	padding: 2px 3px;
+}
+.wrapper.style2 .list-h3{
+	margin-bottom: 0.5rem;
+	color: #868686;
+	font-weight: 400;
+	font-size: 0.7rem;
+}
+#logo{
+	
 }
