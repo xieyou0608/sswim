@@ -93,7 +93,7 @@ function endGame(){
 }
 
 function start(k) {
-    var time = 8;
+    var time = 12;
     ans = questions[k].ans.charAt(3);
 
     $(".alert").hide();
