@@ -2355,7 +2355,7 @@
 		.image.left {
 			float: left;
 			margin: 0 1.5rem 1rem 0;
-			top: 0.25rem;
+			top: 0rem;
 		}
 
 		.image.right {
@@ -3758,7 +3758,7 @@
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
 		justify-content: center;
-		background-image: url("../../images/banner.jpg");
+		background-image: url("../../images/sswim_banner.jpg");
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -3787,6 +3787,11 @@
 
 		#banner h1 {
 			font-size: 4rem;
+			margin-bottom: 1rem;
+			color: #FFF;
+		}
+		#banner h2{
+			font-size: 2.5rem;
 			margin-bottom: 1rem;
 			color: #FFF;
 		}
