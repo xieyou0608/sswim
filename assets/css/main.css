@@ -4312,6 +4312,6 @@ header h2{
 	font-weight: 400;
 	font-size: 0.8rem;
 }
-#logo{
-	
+#banner{
+	background-image: url("../../images/sswim_banner.jpg")
 }
