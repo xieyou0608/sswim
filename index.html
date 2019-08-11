@@ -258,10 +258,17 @@
 	<footer id="footer" class="wrapper style2">
 		<div class="inner">
 			<div class="box">
-				<div class="content">
-					<!--
-								<p>填寫以下表單並且下載相關檔案即完成報名</p>
-								-->
+				<div class="content appli_info">
+					<h2 class="align-center">報名資訊</h2>
+					<hr>
+					<h4>報名資格：全體台大社會、社工及資管系大一新生</h4> 
+					<h4>活動地點：桃園龍潭渴望園區 (325桃園市龍潭區渴望路185號)</h4>
+					<h4>活動日期：2019・9/6(五) - 9/8(日)</h4>
+					<h4>報名截止日期：2019・8/30(五)</h4>
+					<h4>營隊費用：新台幣3900元整</h4>
+					<h4>匯款資訊：國泰世華 (代碼013) 帳號：030506140966</h4>
+					<h4>匯款完成後，請記住帳號後5碼並填寫下方報名表單以完成報名</h4>
+					<hr>
 					<h2 class="align-center">報名表單</h2>
 					<hr />
 					<form action="#" method="post">
@@ -291,6 +298,19 @@
 							<input name="contact_number" id="contact_number" type="tel" placeholder="緊急聯絡人電話"
 								required="required">
 						</div>
+						<div class="field third first">
+							<label for="birthday">生日</label>
+							<input name="birthday" id="birthday" type="text" placeholder="西元年 / 月 / 日"
+									required="required">
+						</div>
+						<div class="field third first">
+							<label for="bank_acct">匯款帳號末五碼</label>
+							<input name="bank_acct" id="bank_acct" type="text" placeholder="匯款帳號末五碼" required="required">
+						</div>
+						<div class="field third">
+							<label for="transfer_date">匯款日期</label>
+							<input name="transfer_date" id="transfer_date" type="text" placeholder="月 / 日 , 時 : 分" required="required">
+						</div>
 						<div class="field" id="dept">
 							<label for="dept">系所</label>
 							<input type="radio" id="IM" value="IM" name="dept" required="required">
@@ -299,22 +319,6 @@
 							<label for="Soc">社會學系</label>
 							<input type="radio" id="SW" value="SW" name="dept" required="required">
 							<label for="SW">社會工作學系</label>
-						</div>
-						<div class="field third">
-							<label for="birthday">生日</label>
-							<div class="year">
-								<input name="birthday_year" id="year" type="text" placeholder="西元年" maxlength="4"
-									required="required">
-							</div>
-							<div class="month">
-								<input name="birthday_month" id="month" type="text" placeholder="月" maxlength="2"
-									required="required">
-							</div>
-							<div class="day">
-								<input name="birthday_day" id="day" type="text" placeholder="日" maxlength="2"
-									required="required">
-							</div>
-
 						</div><br>
 						<div class="field third">
 							<label for="shirt_size">營服尺寸</label>
@@ -341,6 +345,8 @@
 							<label for="message">其他訊息</label>
 							<textarea name="message" id="message" rows="3" placeholder="想說的話"></textarea>
 						</div>
+						<hr>
+						<p></p>
 						<ul class="actions align-center">
 							<li><input value="馬上報名" class="button special" type="submit" onclick="s(event)"></li>
 						</ul>

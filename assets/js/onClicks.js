@@ -14,9 +14,9 @@ function s(e){
             dept = childOfDept[i].id
         i = i + 2
     }
-    let year = document.getElementById("year").value
-    let month = document.getElementById("month").value
-    let day = document.getElementById("day").value
+    let bank_acct = document.getElementById("bank_acct").value
+    let transfer_date = document.getElementById("transfer_date").value
+    let birthday = document.getElementById("birthday").value
     let size = document.getElementById("shirt_size").value
     let isVeg = document.getElementById("veg").checked
     let otherMessage = document.getElementById("message").value
@@ -36,18 +36,15 @@ function s(e){
         ident:ident,
         contact_person:contact_person,
         contact_number:contact_number,
+        birthday:birthday,
+        bank_acct:bank_acct,
+        transfer_date:transfer_date,
         dept:dept,
-        year:year,
-        month:month,
-        day:day,
         size:size,
         isVeg:isVeg,
         otherMessage: otherMessage
     }
-    if(name && email && phone && ident && contact_number && contact_person && dept != "none" && year && month && day
-        && size){
-        sendData(all)
-        }
+    sendData(all)
 }
 function knowledgeStart(e){
     console.log(1)
