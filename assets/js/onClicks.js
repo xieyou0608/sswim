@@ -1,6 +1,6 @@
 function s(e){
     //e.preventDefault();
-    let name = document.getElementById("name").value
+    let name = document.getElementById("applier").value
     let email = document.getElementById("email").value
     let phone = document.getElementById("phone").value
     let ident = document.getElementById("ident").value
@@ -42,9 +42,10 @@ function s(e){
         dept:dept,
         size:size,
         isVeg:isVeg,
-        otherMessage: otherMessage
+        otherMessage:otherMessage
     }
-    sendData(all)
+    sendData(all);
+    alert("報名成功！");
 }
 function knowledgeStart(e){
     console.log(1)
