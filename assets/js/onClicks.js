@@ -48,7 +48,7 @@ function s(e){
         sendData(all);
     }
     catch(error){
-        alert("報名失敗！請稍後再試一次");
+        alert("報名失敗！請稍後再試一次，或聯絡宿營粉絲團");
         alert(error.name);
         alert(error.message);
     }
