@@ -13,7 +13,8 @@ var database = firebase.database().ref().child("form")
 var gamebase = firebase.database().ref().child("game")
 
 function sendData(data){
-    database.update(data)
+    database.update(data);
+    alert("報名成功！");
 }
 function endGameSendData(data){
     gamebase.update(data)

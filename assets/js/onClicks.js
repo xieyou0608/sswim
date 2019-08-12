@@ -1,6 +1,6 @@
 function s(e){
     //e.preventDefault();
-    let name = document.getElementById("applier").value
+    let applier = document.getElementById("applier").value
     let email = document.getElementById("email").value
     let phone = document.getElementById("phone").value
     let ident = document.getElementById("ident").value
@@ -30,7 +30,7 @@ function s(e){
 
     let all = {}
     all[ident]={
-        name:name,
+        name:applier,
         email:email,
         phone:phone,
         ident:ident,
@@ -44,8 +44,12 @@ function s(e){
         isVeg:isVeg,
         otherMessage:otherMessage
     }
-    sendData(all);
-    alert("報名成功！");
+    try{
+        sendData(all);
+    }
+    catch(error){
+        alert("報名失敗！請稍後再試一次");
+    }
 }
 function knowledgeStart(e){
     console.log(1)
