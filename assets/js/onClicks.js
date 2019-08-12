@@ -44,13 +44,16 @@ function s(e){
         isVeg:isVeg,
         otherMessage:otherMessage
     }
-    try{
-        sendData(all);
-    }
-    catch(error){
-        alert("報名失敗！請稍後再試一次，或聯絡宿營粉絲團");
-        alert(error.name);
-        alert(error.message);
+    if(applier && email && phone && ident && contact_number && contact_person && dept != "none" && birthday && bank_acct
+        && transfer_date && size){
+        try{
+            sendData(all);
+        }
+        catch(error){
+            alert("報名失敗！請稍後再試一次，或聯絡宿營粉絲團");
+            alert(error.name);
+            alert(error.message);
+        }
     }
 }
 function knowledgeStart(e){
