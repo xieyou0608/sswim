@@ -49,6 +49,8 @@ function s(e){
     }
     catch(error){
         alert("報名失敗！請稍後再試一次");
+        alert(error.name);
+        alert(error.message);
     }
 }
 function knowledgeStart(e){
