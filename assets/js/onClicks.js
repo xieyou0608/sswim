@@ -44,8 +44,7 @@ function s(e){
         isVeg:isVeg,
         otherMessage:otherMessage
     }
-    if(applier && email && phone && ident && contact_number && contact_person && dept != "none" && birthday && bank_acct
-        && transfer_date && size){
+    if(applier && email && phone && ident && contact_number && contact_person && dept != "none" && birthday && size){
         try{
             sendData(all);
         }
